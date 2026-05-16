@@ -1,0 +1,29 @@
+[
+  {
+    "id": "47589cfd-de79-44da-a952-48991f9de7aa",
+    "fName": "salome",
+    "lName": "papashvili",
+    "userName": "salomea",
+    "email": "salom",
+    "phone": "123",
+    "password": "12345"
+  },
+  {
+    "id": "3682d791-7c9a-4117-acca-13ef5c005cbe",
+    "fName": "1",
+    "lName": "1",
+    "userName": "1",
+    "email": "1",
+    "phone": "1",
+    "password": "1"
+  },
+  {
+    "id": "1cf44725-5420-4132-800f-2b8fcddb25c0",
+    "fName": "salome",
+    "lName": "papashvili",
+    "userName": "salomeaa",
+    "email": "salome@gmail.com",
+    "phone": "123455",
+    "password": "12345"
+  }
+]
