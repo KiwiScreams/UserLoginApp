@@ -14,6 +14,28 @@ public class UserService
         string phone,
         string password)
     {
+        if (
+            fname.Trim() == "" ||
+            lname.Trim() == "" ||
+            userName.Trim() == "" ||
+            email.Trim() == "" ||
+            phone.Trim() == "" ||
+            password.Trim() == ""
+           )
+        {
+            return false;
+        }
+
+        if (!email.Contains("@") || !email.Contains("."))
+        {
+            return false;
+        }
+
+        if (phone.Length < 9)
+        {
+            return false;
+        }
+
         List<User> users = fileService.ReadUsers();
 
         foreach (User user in users)
@@ -43,6 +65,7 @@ public class UserService
 
         return true;
     }
+
     public User AuthenticateUser(string userName, string password)
     {
         List<User> users = fileService.ReadUsers();
@@ -60,9 +83,11 @@ public class UserService
 
         return null;
     }
+
     public User GetUserByUsername(string userName)
     {
         List<User> users = fileService.ReadUsers();
+
         foreach (User user in users)
         {
             if (user.UserName == userName)
@@ -70,6 +95,7 @@ public class UserService
                 return user;
             }
         }
+
         return null;
     }
 }
